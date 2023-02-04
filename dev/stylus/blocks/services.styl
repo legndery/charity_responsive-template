@@ -8,7 +8,7 @@
 $c-services_title_text = $c-light
 $c-services_text = $c-light
 $c-services_goals_bg = #f1efec
-$c-services_donate_bg = #9b242d
+$c-services_donate_bg = #7FDDC2
 $c-services_news_bg = #46a651
 $c-services_soc_bg = #fff
 
@@ -34,13 +34,14 @@ $block = ".services"
 
   // $Services section title
   &__title
+    word-break: break-word;
     font-size 40px
     font-weight bold
     color $c-services_title_text
     text-shadow 1px 1px 3px rgba(0,0,0,.5)
 
     @media screen and ( max-width: 768px )
-      font-size 25px
+      font-size 20px
 
 
   // $Services section text
@@ -53,12 +54,13 @@ $block = ".services"
     @media screen and ( max-width: 768px )
       font-size 14px
       line-height 20px
+      word-break: break-word;
 
 
   // $Services section goals
   &__goals
     width 64%
-    height 320px
+    min-height 320px
     background-color $c-services_goals_bg
     background-image url("../images/bg/info.jpg")
     background-position right center
@@ -69,7 +71,7 @@ $block = ".services"
     padding 135px 0
 
     @media screen and ( max-width: 768px )
-      height 220px
+      min-height 220px
       background-image none
       padding 80px 0
 
@@ -90,7 +92,7 @@ $block = ".services"
   // $Services section donate
   &__donate
     width 36%
-    height 320px
+    min-height 320px
     background-color $c-services_donate_bg
     float right
     padding 135px 0 0 40px
@@ -99,15 +101,15 @@ $block = ".services"
       background darken($c-services_donate_bg, 10%)
 
     @media screen and ( max-width: 768px )
-      height 220px
+      min-height 220px
       padding 80px 0 0 30px
 
 
   // $Services section news
   &__news
     width 64%
-    height 640px
-    padding 65px 80px 0 0
+    min-height 640px
+    padding 100px 100px 0 0
     background-color $c-services_news_bg
     background-image url("../images/bg/news.jpg")
     background-position left bottom
@@ -116,7 +118,7 @@ $block = ".services"
     float left
 
     @media screen and ( max-width: 768px )
-      height 220px
+      min-height 220px
       padding 20px 30px 0 10px
       background-image none
 
@@ -151,7 +153,7 @@ $block = ".services"
   &__soc
     position relative
     width 36%
-    height 640px
+    min-height 640px
     background-color $c-services_soc_bg
     background-image url("../images/bg/like.jpg")
     background-position center bottom
@@ -161,8 +163,8 @@ $block = ".services"
     float right
 
     @media screen and ( max-width: 768px )
-      height 220px
-      background-image none
+      min-height 220px
+      // background-image none
 
 
   // $Services section icon

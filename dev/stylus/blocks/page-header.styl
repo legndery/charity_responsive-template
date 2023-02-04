@@ -8,7 +8,7 @@
 $c-page-header_bg = $c-light
 $c-page-header_logo_text = $c-dark
 $c-page-header_nav-link_text = $c-dark
-$c-page-header_nav-link_selected_text = #9b242d
+$c-page-header_nav-link_selected_text = #7FDDC2
 
 
 //////////////////////////////////////// Block mixins and functions
@@ -19,7 +19,7 @@ $block = ".page-header"
 {$block}
   width 100%
   min-height 115px
-  padding 35px 0
+  padding 20px 0
   background-color $c-page-header_bg
 
 
@@ -37,7 +37,7 @@ $block = ".page-header"
   &__logo
     float left
     width 212px
-    height 45px
+    height 70px
     color $c-page-header_logo_text
 
     @media screen and ( max-width: 960px )
@@ -50,11 +50,13 @@ $block = ".page-header"
   &__nav
     float right
     text-align right
+    margin-top 20px
 
     @media screen and ( max-width: 960px )
       margin 0 auto
       text-align center
       float none
+      margin-top 20px
 
 
   // $Page header navigation link

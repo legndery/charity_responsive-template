@@ -1,11 +1,11 @@
 {
   "site": {
     "lang": "en",
-    "title": "Charity template",
+    "title": "New Leaf Foundation",
     "titleDelim": " | ",
-    "description": "Free charity website template",
+    "description": "New Leaf Foundation",
     "keywords": "html template, theme, freebie, opensource",
-    "url": "http://website-templates.github.io/charity_responsive-template"
+    "url": "https://newleaffoundation.in/"
   },
   "modules": {
     "googleFonts": "https://fonts.googleapis.com/css?family=Roboto+Slab",
